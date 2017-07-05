@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import deltatrack
+
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        DeltaTrack.getInstance().printmessage(message: "Hello")
+        DeltaTrack.getInstance().printall(message: "World")
+        DeltaTrack.getInstance().getUser().login(identifier: "jaisu")
+        DeltaTrack.getInstance().getUser().logout()
+                
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -15,6 +15,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		77500E4F1F0CE58100D8B9E3 /* deltatrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77500E4E1F0CE58100D8B9E3 /* deltatrack.framework */; };
+		77500E501F0CE59400D8B9E3 /* deltatrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77500E4E1F0CE58100D8B9E3 /* deltatrack.framework */; };
+		77500E511F0CE59400D8B9E3 /* deltatrack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77500E4E1F0CE58100D8B9E3 /* deltatrack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,11 +30,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		77500E4A1F0CE52B00D8B9E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				77500E511F0CE59400D8B9E3 /* deltatrack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		115F8187B32291A386C0F5A0 /* deltatrack.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = deltatrack.podspec; path = ../deltatrack.podspec; sourceTree = "<group>"; };
+		115F8187B32291A386C0F5A0 /* deltatrack.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = deltatrack.podspec; path = ../deltatrack.podspec; sourceTree = "<group>"; };
 		15D403403BBA58432D32D105 /* Pods-deltatrack_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deltatrack_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-deltatrack_Tests/Pods-deltatrack_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2B2FCFC3F2FE6ADC433F7087 /* Pods-deltatrack_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deltatrack_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deltatrack_Tests/Pods-deltatrack_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		594EBBC86F1AC78E2B8725E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		594EBBC86F1AC78E2B8725E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* deltatrack_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deltatrack_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,10 +59,11 @@
 		607FACE51AFB9204008FA782 /* deltatrack_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deltatrack_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		77500E4E1F0CE58100D8B9E3 /* deltatrack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = deltatrack.framework; path = "../../../../Library/Developer/Xcode/DerivedData/deltatrack-bhiuulhfshhrjygltplqmasqrndo/Build/Products/Debug-iphonesimulator/deltatrack/deltatrack.framework"; sourceTree = "<group>"; };
 		7D249B7B5DB588E716C1595C /* Pods-deltatrack_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deltatrack_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deltatrack_Example/Pods-deltatrack_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B3F26D09075E9A6BECA792A2 /* Pods-deltatrack_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deltatrack_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-deltatrack_Example/Pods-deltatrack_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C793D2311BEE75C848DAF05C /* Pods_deltatrack_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deltatrack_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB5410F59474BC0B54738AE7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DB5410F59474BC0B54738AE7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DD7A50EC28C919382830B2E3 /* Pods_deltatrack_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deltatrack_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,7 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77500E4F1F0CE58100D8B9E3 /* deltatrack.framework in Frameworks */,
 				2F1F42212BA8B7F45F07E366 /* Pods_deltatrack_Example.framework in Frameworks */,
+				77500E501F0CE59400D8B9E3 /* deltatrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 		0F00C6F96C935B3684DFB4FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77500E4E1F0CE58100D8B9E3 /* deltatrack.framework */,
 				C793D2311BEE75C848DAF05C /* Pods_deltatrack_Example.framework */,
 				DD7A50EC28C919382830B2E3 /* Pods_deltatrack_Tests.framework */,
 			);
@@ -172,6 +193,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				8D434FF44E5B3CF7910473EA /* [CP] Embed Pods Frameworks */,
 				312949E44CF93A2A3283E78D /* [CP] Copy Pods Resources */,
+				77500E4A1F0CE52B00D8B9E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
