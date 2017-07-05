@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'deltatrack_Example' do
+  pod 'deltatrack', :path => '../'
+
+  target 'deltatrack_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
