@@ -16,7 +16,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		77500E4F1F0CE58100D8B9E3 /* deltatrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77500E4E1F0CE58100D8B9E3 /* deltatrack.framework */; };
-		77500E501F0CE59400D8B9E3 /* deltatrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77500E4E1F0CE58100D8B9E3 /* deltatrack.framework */; };
 		77500E511F0CE59400D8B9E3 /* deltatrack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77500E4E1F0CE58100D8B9E3 /* deltatrack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -74,7 +73,6 @@
 			files = (
 				77500E4F1F0CE58100D8B9E3 /* deltatrack.framework in Frameworks */,
 				2F1F42212BA8B7F45F07E366 /* Pods_deltatrack_Example.framework in Frameworks */,
-				77500E501F0CE59400D8B9E3 /* deltatrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +230,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -545,10 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B2FCFC3F2FE6ADC433F7087 /* Pods-deltatrack_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -565,10 +560,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15D403403BBA58432D32D105 /* Pods-deltatrack_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";

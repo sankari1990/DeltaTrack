@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         DeltaTrack.getInstance().printall(message: "World")
         DeltaTrack.getInstance().getUser().login(identifier: "jaisu")
         DeltaTrack.getInstance().getUser().logout()
+        DeltaTrack.getInstance().getAnalytics().track(eventName: "Main Screen")
                 
         
     }
