@@ -1,0 +1,16 @@
+PODS:
+  - deltatrack (0.1.0)
+
+DEPENDENCIES:
+  - deltatrack (from `../`)
+
+EXTERNAL SOURCES:
+  deltatrack:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  deltatrack: 1f2b8c177c3e1b7f0a1229d08f1cd4e680e84c88
+
+PODFILE CHECKSUM: d8b0172236abb262d7efe7287ebedc80fc9a52b6
+
+COCOAPODS: 1.2.1
